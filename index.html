@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".//assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>	
+    <link rel="stylesheet" href=".//assets/style-2.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav">
+            <li class="active"><strong>Logo</strong></li>
+            <li class="right"><a href="#contact-us">Contact Us</a></li>
+            <li class="right"><a href="#portofolio">Pages</a></li>
+            <li class="right"><a href="#me">About</a></li>
+            <div id="myLinks">
+                <li><a href="#me">About</a></li>
+                <li><a href="#portofolio">Pages</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </ul>
+    </nav>
+    <header>
+        <div class="jumbotron">
+            <div class="desc-jumbo">
+                <h3>Hello Everyone</h3>
+                <p>Rifky Ramadhan</p>
+                <p>I'm Front End Developer</p>
+                <button type="submit"><a href="#me">Show More</a></button>
+            </div>
+            <div class="image-jumbo">
+                <img src=".//img/revisi.svg" alt="jumbo">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="me">
+            <h2 style="font-size: 2em; text-align: center; margin-bottom: 0;">About & Skill</h2>
+            <div class="about">
+                <div class="profile">
+                    <div class="image">
+                        <img src=".//img/profil.jpg" alt="">
+                    </div>
+                    <div class="isi">
+                        <strong>Rifky Ramadhan</strong>
+                        <table>
+                            <tr>
+                                <th>Lahir</th>
+                                <td>00 Desember 2000</td>
+                            </tr>
+                            <tr>
+                                <th>Asal</th>
+                                <td>Kuningan Jawa Barat</td>
+                            </tr>
+                            <tr>
+                                <th>No.Phone</th>
+                                <td>08x539447xxxx</td>
+                            </tr>
+                        </table>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/rifkyyrmdhn/" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="https://github.com/rifkyr990" class="fa fa-github"></a>
+                            <a href="mailto:rifkir802@gmail.com" class="fa fa-google"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="skil">
+                    <label>HTML</label>
+                    <div class="skill">
+                        <div class="html"></div>
+                    </div>
+                    <label>CSS</label>
+                    <div class="skill">
+                        <div class="css"></div>
+                    </div>
+                    <label>JavaScript</label>
+                    <div class="skill">
+                        <div class="javascript"></div>
+                    </div>
+                        <label>React JS</label>
+                    <div class="skill">
+                        <div class="react"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portofolio">
+            <h2>My Pages</h2>
+            <article class="portofolio-center">
+                <div class="item">
+                    <div class="image-portofolio">
+                        <img src=".//img/dev2.jpg" alt="produk">
+                    </div>
+                    <div class="descripe-portofolio">
+                        <h2>Why like it</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus vero quam laborum architecto eum exercitationem laudantium quod, quos debitis placeat non inventore porro distinctio repellendus iste totam assumenda. Unde, iure.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image-portofolio">
+                        <img src=".//img/design.jpg" alt="produk">
+                    </div>
+                    <div class="descripe-portofolio">
+                        <h2>My Passion</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus vero quam laborum architecto eum exercitationem laudantium quod, quos debitis placeat non inventore porro distinctio repellendus iste totam assumenda. Unde, iure.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image-portofolio">
+                        <img src=".//img/design2.jpg" alt="produk">
+                    </div>
+                    <div class="descripe-portofolio">
+                        <h2>Learn by doing</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus vero quam laborum architecto eum exercitationem laudantium quod, quos debitis placeat non inventore porro distinctio repellendus iste totam assumenda. Unde, iure.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="contact-us">
+            <h2>Contact US</h2>
+            <div class="column">
+                <div class="image-contact">
+                    <img src=".//img/contact.svg" alt="contact">
+                </div>
+                <div class="form">
+                    <label for="fname">Nama Depan</label>
+                    <input type="text" name="fname" id="fname">
+                    <label for="bname">Nama Belakang</label>
+                    <input type="text" name="bname" id="bname">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="massage">Pesan</label>
+                    <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="show">
+        <button onclick="url()" id="myBtn"><a href="#" class="fa fa-whatsapp"></a></button>
+    </div>
+    <footer>
+        <h2>Rifky Ramadhan</h2>
+    </footer>
+    <script src=".//assets/script.js"></script>
+</body>
+</html>

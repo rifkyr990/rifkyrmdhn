@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300;1,400&display=swap');
+body {
+    margin: 0;
+    font-family: 'Zilla Slab', serif;
+    font-size: 28px;
+}
+ul {
+    padding-left: 10px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.301);
+}
+.topnav {
+    margin-top: 0;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: teal;
+}
+.topnav li {
+    font-weight: 400;
+    color: teal;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+}
+i.fa.fa-bars {
+    padding: 10px;
+}
+li.right {
+    float: right;
+    font-size: 1em;
+    cursor: pointer;
+}
+li.right:hover {
+    background-color: teal;
+    color: white;
+}
+#myLinks li {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+}
+#myLinks li:hover {
+    background-color: teal;
+    color: #fff;
+}
+.topnav a.icon {
+    background: #fff;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+a.icon {
+    color: teal;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+}
+.topnav a:hover {
+    background-color: teal;
+    color: white;
+}
+
+li.active {
+    background-color: white;
+    font-size: 1em;
+    padding: 10px 16px;
+}
+header{
+    text-align: center;
+}
+section img, .description{
+    display: block;
+    margin: 0 auto;
+}
+.art-2 {
+    width: 770px; 
+    height: 477px;
+}
+section {
+    margin: 1em 4em;
+}
+#article-grid {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.sidebar-content img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.sidebar-content {
+    text-align: center;
+    font-size: 23px;
+    margin: 1px 10px;
+}
+.sidebar-content p {
+    margin: 0.2em 0em;
+    padding: 8px 15px;
+}.sidebar-content img {
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+}
+aside {
+    margin-right: 1em;
+    margin-top: 12px;
+}
+.sidebar {
+    display: block;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    background: white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.301);
+}
+.descriptions p{
+    text-indent: 2em;
+    word-spacing: 15px;
+    text-align: justify;
+    margin-top: 3em;
+}
+.link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.link:hover {
+    color: teal;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+#btn {
+    display: block;
+    font-size: 20px;
+    position: fixed;
+    bottom: 100px;
+    right: 150px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+#btn:hover {
+    background-color: #555;
+}
+footer {
+    text-align: center;
+    padding: 12px 15px;
+    background-color: teal;
+    color: white;
+}
+@media (max-width: 1000px) {
+    #article-grid {
+        grid-template-columns: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .art-2 {
+        width: 100%;
+        height: 100%;
+    }
+    section {
+        margin: 0 1em;
+        font-size: 15px;
+    }
+    .descriptions p{
+        word-spacing: 0px;
+        text-align: left;
+        margin: 2em 0em;
+    }
+    header h2 {
+        font-size: 15px;
+    }
+    ul {
+        padding-left: 5px;
+        font-size: 10px;
+    }
+    .topnav a.icon {
+        display: block;
+        font-size: 12px;
+    }
+    li.right {
+        display: none;
+    }
+    footer {
+        font-size: 10px;
+        padding: 5px 15px;
+    }
+    a.icon {
+        padding: 0px 5px;
+    }
+}
+@media (min-width: 1000px) {
+    #myLinks li {
+        display: none;
+        font-size: 10px;
+    }
+}
